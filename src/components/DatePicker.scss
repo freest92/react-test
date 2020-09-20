@@ -1,0 +1,30 @@
+ @import "./resetDefaultStyles.scss";
+
+.root__date-picker{
+    position: relative;
+    margin: 30px 0 0 30px;
+
+    input{
+        padding: 5px;
+        width: 130px;
+        height: 30px;
+        font-size: 1rem;
+        &.input--is-invalid {
+            border-color: red;
+        }
+        &:focus{
+            outline-color: $selectedDayColor;
+        }
+    }    
+    .root__input-icon{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 110px;
+        top: -53px;
+        pointer-events: none;
+        background-image: url("../img/icon.png");
+        background-size: cover;
+    }
+}
+

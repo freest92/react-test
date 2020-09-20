@@ -1,0 +1,41 @@
+$selectedDayColor : #3b5edc;
+.react-datepicker{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.react-datepicker__day {
+    &:hover {
+        border-radius: 1rem !important;
+        background-color: #f0f0f0;
+    }
+    &:focus{
+        outline-color: $selectedDayColor!important;
+        border-radius: 1rem !important;
+    }
+}
+
+.react-datepicker__day--weekend{
+    color:grey !important;
+}
+
+.react-datepicker__day--selected{
+  color:white !important;
+  border-radius: 1rem !important;
+  background-color:$selectedDayColor !important;
+}
+
+.react-datepicker__today-button, 
+.react-datepicker__header,
+.react-datepicker{
+    background-color: white !important;
+    border-radius: 0 !important;
+}
+
+.react-datepicker__today-button {
+    color: $selectedDayColor !important;
+    padding: 20px!important;
+}
+
+.react-datepicker__triangle {
+    display: none !important;
+}
